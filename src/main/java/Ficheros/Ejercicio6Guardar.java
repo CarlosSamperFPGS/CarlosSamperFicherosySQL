@@ -12,7 +12,7 @@ public class Ejercicio6Guardar {
         personas.add(new Persona("Diana", 27));
         personas.add(new Persona("Carlos", 23));
 
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("personas.dat"))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(RutaResources.getRuta("personas.dat")))) {
             oos.writeObject(personas);
             System.out.println("Lista guardada correctamente.");
         } catch (IOException e) {

@@ -8,7 +8,7 @@ public class Ejercicio3 {
     public static void main(String[] args) {
         int totalPalabras = 0;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("texto.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(RutaResources.getRuta("texto.txt")))) {
             String linea;
             while ((linea = reader.readLine()) != null) {
                 if (!linea.trim().isEmpty()) {

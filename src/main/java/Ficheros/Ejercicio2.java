@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("usuario.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(RutaResources.getRuta("usuario.txt")))) {
             String linea;
             while ((linea = reader.readLine()) != null) {
                 System.out.println(linea);

@@ -14,7 +14,7 @@ public class Ejercicio1 {
         System.out.print("Introduce tu edad: ");
         int edad = sc.nextInt();
 
-        try (FileWriter writer = new FileWriter("usuario.txt")) {
+        try (FileWriter writer = new FileWriter("src/main/resources/usuario.txt")) {
             writer.write("Nombre: " + nombre + "\n");
             writer.write("Edad: " + edad + "\n");
             System.out.println("Datos guardados en usuario.txt");
