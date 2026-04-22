@@ -1,0 +1,3 @@
+Esto es un texto de ejemplo
+Se leerá en el ejercicio 3, y así
+se asegurará que este funciona de manera correcta.
