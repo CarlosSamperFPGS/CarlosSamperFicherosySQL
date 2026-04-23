@@ -1,5 +1,7 @@
 package Ficheros;
 
+import Utils.Utils;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -12,7 +14,7 @@ public class Ejercicio6Guardar {
         personas.add(new Persona("Diana", 27));
         personas.add(new Persona("Carlos", 23));
 
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(RutaResources.getRuta("personas.dat")))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(Utils.getRuta("personas.dat")))) {
             oos.writeObject(personas);
             System.out.println("Lista guardada correctamente.");
         } catch (IOException e) {
