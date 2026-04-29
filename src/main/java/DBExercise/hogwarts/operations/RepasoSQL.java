@@ -90,7 +90,7 @@ public class RepasoSQL {
 
             System.out.println("\n 4. Estudiantes por casa (GROUP BY):");
             System.out.println("─".repeat(35));
-            System.out.printf("  %-20s %-s%n", "Casa", "Nº Estudiantes");
+            System.out.printf("  %-30s %-10s%n", "Casa", "Nº Estudiantes");
             System.out.println("─".repeat(35));
             while (rs.next())
                 System.out.printf("  %-20s %d%n", rs.getString("casa"), rs.getInt("total"));
